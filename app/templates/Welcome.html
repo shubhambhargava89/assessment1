@@ -1,0 +1,16 @@
+{% load static %}
+{% block body %}
+
+{% include 'user_navigation.html'%}
+<marquee style="font-family: 'Monotype Corsiva'; font-size:25px; color:darkcolor; background-color:lightblue; font-weight:bold; margin-top:1%">
+    Welcome
+</marquee>
+<hr>
+<br><br><br><br><br>
+<div class="container" style="text-align:center">
+<a class="navbar-brand text-black pl-5 font-weight:bold" style="font-family:'Monotype Corsiva';font-size:50px;text-align: center; ">Welcome {{request.user.first_name}} {{request.user.last_name}}</a>
+</div>
+<br><br><br><br><br>
+<hr>
+{% include 'user_footer.html'%}
+{% endblock body%}
